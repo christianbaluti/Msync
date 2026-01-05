@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pay with Malipo</title>
+</head>
+<body>
+
+  <h1>Checkout with Malipo</h1>
+
+  <label for="amount">Amount (MWK):</label>
+  <input type="number" id="amount" value="1000" min="1" step="1">
+
+  <label for="orderId">Order ID:</label>
+  <input type="text" id="orderId" value="ORD-12345">
+
+  <button id="payBtn">Pay Now</button>
+
+  <div id="result" style="margin-top:20px;"></div>
+
+  <!-- Malipo SDK script -->
+  <script src="https://app.malipo.mw/sdk/v1-malipo-hosted-checkout.js"></script>
+
+  <script>
+    document.getElementById('payBtn').addEventListener('click', function() {
+      const amount = parseFloat(document.getElementById('amount').value);
+      const orderId = document.getElementById('orderId').value.trim();
+
+      if (!orderId || amount <= 0) {
+        alert('Please enter a valid amount and order ID.');
+        return;
+      }
+
+      window.Malipo.open({
+        merchantAccount: "668974814",    // ← replace with your actual merchant account
+        currency: "MWK",
+        amount: amount,
+        order_id: orderId,
+        description: "Payment for order " + orderId,
+
+        onSuccess: (result) => {
+          document.getElementById('result').innerText = "Payment successful! Transaction ID: " + result.transaction_id;
+          console.log('Success result:', result);
+          // TODO: you may want to send result back to your backend to verify.
+        },
+
+        onError: (error) => {
+          document.getElementById('result').innerText = "Payment failed: " + (error.message || JSON.stringify(error));
+          console.error('Payment error:', error);
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,15 @@
+/* Example of how to load your custom fonts */
+
+@font-face {
+  font-family: 'Gotham Rounded Book';
+  src: url('/assets/fonts/GothamRnd-Book.woff2') format('woff2'); /* Update with correct path */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gotham Rounded Book'; /* Use the same family name */
+  src: url('/assets/fonts/GothamRnd-Bold.woff2') format('woff2'); /* Update with correct path */
+  font-weight: bold; /* Map this file to the 'bold' weight */
+  font-style: normal;
+}

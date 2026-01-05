@@ -190,6 +190,10 @@ switch ($route) {
         require __DIR__ . '/views/events/schedules/manage.php';
         break;
 
+    case (strpos($route, '/events/certifications') === 0):
+        require __DIR__ . '/views/events/certifications.php';
+        break;
+
         
     default:
         http_response_code(404);

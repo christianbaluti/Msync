@@ -18,48 +18,40 @@
                 </div>
             </div>
 
-            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-7 gap-4">
-                <button type="button" id="addScheduleBtn" class="group bg-white p-4 rounded-lg shadow-sm border border-slate-200 text-center hover:shadow-md hover:-translate-y-1 transition-all duration-200">
-                    <div class="w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center mx-auto">
-                        <svg class="w-6 h-6 text-indigo-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0h18M-4.5 12h22.5" /></svg>
-                    </div>
-                    <div class="mt-2 text-sm font-semibold text-slate-800">Add Schedule</div>
+<div class="flex flex-wrap items-center gap-3">
+                <button type="button" id="addScheduleBtn" class="flex items-center gap-2 bg-white px-3 py-2 rounded-lg shadow-sm border border-slate-200 hover:bg-slate-50 transition-colors text-sm font-medium text-slate-700">
+                    <svg class="w-4 h-4 text-indigo-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0h18M-4.5 12h22.5" /></svg>
+                    Add Schedule
                 </button>
-                <button type="button" id="manageTicketTypesBtn" class="group bg-white p-4 rounded-lg shadow-sm border border-slate-200 text-center hover:shadow-md hover:-translate-y-1 transition-all duration-200">
-                    <div class="w-12 h-12 bg-teal-100 rounded-lg flex items-center justify-center mx-auto">
-                        <svg class="w-6 h-6 text-teal-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M16.5 6v.75m0 3v.75m0 3v.75m0 3V18m-9-12V6a2.25 2.25 0 012.25-2.25h5.25A2.25 2.25 0 0118 6v12a2.25 2.25 0 01-2.25 2.25H9A2.25 2.25 0 016.75 18V6a2.25 2.25 0 012.25-2.25h5.25A2.25 2.25 0 0118 6" /></svg>
-                    </div>
-                    <div class="mt-2 text-sm font-semibold text-slate-800">Ticket Types</div>
+                <button type="button" id="manageTicketTypesBtn" class="flex items-center gap-2 bg-white px-3 py-2 rounded-lg shadow-sm border border-slate-200 hover:bg-slate-50 transition-colors text-sm font-medium text-slate-700">
+                    <svg class="w-4 h-4 text-teal-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M16.5 6v.75m0 3v.75m0 3v.75m0 3V18m-9-12V6a2.25 2.25 0 012.25-2.25h5.25A2.25 2.25 0 0118 6v12a2.25 2.25 0 01-2.25 2.25H9A2.25 2.25 0 016.75 18V6a2.25 2.25 0 012.25-2.25h5.25A2.25 2.25 0 0118 6" /></svg>
+                    Ticket Types
                 </button>
-                <button type="button" id="manageAttendeeTypesBtn" class="group bg-white p-4 rounded-lg shadow-sm border border-slate-200 text-center hover:shadow-md hover:-translate-y-1 transition-all duration-200">
-                    <div class="w-12 h-12 bg-sky-100 rounded-lg flex items-center justify-center mx-auto">
-                        <svg class="w-6 h-6 text-sky-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m-7.5-2.952a4.5 4.5 0 011.08-2.032M7.86 8.25a6.75 6.75 0 0110.14-1.332 6.75 6.75 0 01-10.14 1.332zM3.86 19.094A9.094 9.094 0 017.6 18.615m0 0a3 3 0 014.682-2.72m-4.682 2.72a3 3 0 004.682 2.72" /></svg>
-                    </div>
-                    <div class="mt-2 text-sm font-semibold text-slate-800">Attendee Types</div>
+                <button type="button" id="manageAttendeeTypesBtn" class="flex items-center gap-2 bg-white px-3 py-2 rounded-lg shadow-sm border border-slate-200 hover:bg-slate-50 transition-colors text-sm font-medium text-slate-700">
+                    <svg class="w-4 h-4 text-sky-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m-7.5-2.952a4.5 4.5 0 011.08-2.032M7.86 8.25a6.75 6.75 0 0110.14-1.332 6.75 6.75 0 01-10.14 1.332zM3.86 19.094A9.094 9.094 0 017.6 18.615m0 0a3 3 0 014.682-2.72m-4.682 2.72a3 3 0 004.682 2.72" /></svg>
+                    Attendee Types
                 </button>
-                <button type="button" id="manageStreamBtn" class="group bg-white p-4 rounded-lg shadow-sm border border-slate-200 text-center hover:shadow-md hover:-translate-y-1 transition-all duration-200">
-                    <div class="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center mx-auto">
-                        <svg class="w-6 h-6 text-red-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15.362 15.362a9 9 0 11-5.724 0M12 12.75v-3.75m0 3.75a3 3 0 01-3 3H9m3-3a3 3 0 003 3h.362m-3.362 0a3 3 0 013 3V15m-3-3V9m3 3h.362m-3.362 0a3 3 0 013 3v1.5m0-9l-2.25 2.25m0 0l-2.25 2.25M12 9l2.25 2.25M12 9l-2.25 2.25" /></svg>
-                    </div>
-                    <div class="mt-2 text-sm font-semibold text-slate-800">Streaming</div>
+                <button type="button" id="manageStreamBtn" class="flex items-center gap-2 bg-white px-3 py-2 rounded-lg shadow-sm border border-slate-200 hover:bg-slate-50 transition-colors text-sm font-medium text-slate-700">
+                    <svg class="w-4 h-4 text-red-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15.362 15.362a9 9 0 11-5.724 0M12 12.75v-3.75m0 3.75a3 3 0 01-3 3H9m3-3a3 3 0 003 3h.362m-3.362 0a3 3 0 013 3V15m-3-3V9m3 3h.362m-3.362 0a3 3 0 013 3v1.5m0-9l-2.25 2.25m0 0l-2.25 2.25M12 9l2.25 2.25M12 9l-2.25 2.25" /></svg>
+                    Streaming
                 </button>
-                <a href="/events/checkin?id=<?php echo htmlspecialchars($_GET['id'] ?? ''); ?>" class="group bg-white p-4 rounded-lg shadow-sm border border-slate-200 text-center hover:shadow-md hover:-translate-y-1 transition-all duration-200">
-                    <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mx-auto">
-                        <svg class="w-6 h-6 text-green-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
-                    </div>
-                    <div class="mt-2 text-sm font-semibold text-slate-800">Desk Check-in</div>
+                <a href="/events/checkin?id=<?php echo htmlspecialchars($_GET['id'] ?? ''); ?>" class="flex items-center gap-2 bg-white px-3 py-2 rounded-lg shadow-sm border border-slate-200 hover:bg-slate-50 transition-colors text-sm font-medium text-slate-700">
+                    <svg class="w-4 h-4 text-green-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                    Desk Check-in
                 </a>
-                <a href="/events/nametags?id=<?php echo htmlspecialchars($_GET['id'] ?? ''); ?>" class="group bg-white p-4 rounded-lg shadow-sm border border-slate-200 text-center hover:shadow-md hover:-translate-y-1 transition-all duration-200">
-                    <div class="w-12 h-12 bg-amber-100 rounded-lg flex items-center justify-center mx-auto">
-                        <svg class="w-6 h-6 text-amber-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" /></svg>
-                    </div>
-                    <div class="mt-2 text-sm font-semibold text-slate-800">Name Tags</div>
+                <a href="/events/nametags?id=<?php echo htmlspecialchars($_GET['id'] ?? ''); ?>" class="flex items-center gap-2 bg-white px-3 py-2 rounded-lg shadow-sm border border-slate-200 hover:bg-slate-50 transition-colors text-sm font-medium text-slate-700">
+                    <svg class="w-4 h-4 text-amber-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" /></svg>
+                    Name Tags
                 </a>
-                <a href="/events/purchases?id=<?php echo htmlspecialchars($_GET['id'] ?? ''); ?>" class="group bg-white p-4 rounded-lg shadow-sm border border-slate-200 text-center hover:shadow-md hover:-translate-y-1 transition-all duration-200">
-                    <div class="w-12 h-12 bg-rose-100 rounded-lg flex items-center justify-center mx-auto">
-                         <svg class="w-6 h-6 text-rose-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18.75a60.07 60.07 0 0115.797 2.101c.727.198 1.453-.342 1.453-1.096V18.75M3.75 4.5v.75A.75.75 0 013 6h-.75m0 0v-.75A.75.75 0 013 4.5h.75m0 0h.75A.75.75 0 015.25 6v.75m0 0v-.75A.75.75 0 014.5 5.25h.75M5.25 6h.75m-1.5 0h.75M3 12h18M3 15h18" /></svg>
-                    </div>
-                    <div class="mt-2 text-sm font-semibold text-slate-800">Purchases</div>
+                <a href="/events/purchases?id=<?php echo htmlspecialchars($_GET['id'] ?? ''); ?>" class="flex items-center gap-2 bg-white px-3 py-2 rounded-lg shadow-sm border border-slate-200 hover:bg-slate-50 transition-colors text-sm font-medium text-slate-700">
+                     <svg class="w-4 h-4 text-rose-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18.75a60.07 60.07 0 0115.797 2.101c.727.198 1.453-.342 1.453-1.096V18.75M3.75 4.5v.75A.75.75 0 013 6h-.75m0 0v-.75A.75.75 0 013 4.5h.75m0 0h.75A.75.75 0 015.25 6v.75m0 0v-.75A.75.75 0 014.5 5.25h.75M5.25 6h.75m-1.5 0h.75M3 12h18M3 15h18" /></svg>
+                    Purchases
+                </a>
+                <a href="/events/certifications?id=<?php echo htmlspecialchars($_GET['id'] ?? ''); ?>" class="flex items-center gap-2 bg-white px-3 py-2 rounded-lg shadow-sm border border-slate-200 hover:bg-slate-50 transition-colors text-sm font-medium text-slate-700">
+                    <svg class="w-4 h-4 text-purple-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M10.125 2.25h-4.5c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125v-9M10.125 2.25h.375a9 9 0 0 1 9 9v.375M10.125 2.25A3.375 3.375 0 0 1 13.5 5.625v1.5c0 .621.504 1.125 1.125 1.125h1.5a3.375 3.375 0 0 1 3.375 3.375M9 15l2.25 2.25L15 12" />
+</svg>
+                    Certifications
                 </a>
             </div>
 

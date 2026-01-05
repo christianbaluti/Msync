@@ -74,7 +74,7 @@ $menuItems = [
                   }
 
                   // Updated brand colors
-                  $base_classes = 'text-[#0f0f0d] hover:bg-[#C89654]/20 hover:text-[#C89654]';
+                  $base_classes = 'text-black-600 hover:bg-black-100 hover:text-black-800';
                   $active_classes = 'bg-[#C89654]/25 text-[#2C2E6C] font-semibold border-l-4 border-[#C89654] pl-[10px]';
                   $link_classes = $is_active ? $active_classes : $base_classes;
             ?>
@@ -108,11 +108,11 @@ $menuItems = [
                   strpos($current_path, '/events/purchases') === 0
                 )): ?>
                   <ul class="ml-11 mt-1 space-y-1">
-                    <li><a class="block cursor-default rounded-md p-2 text-sm text-gray-200 <?php echo (strpos($current_path, '/events/manage') === 0) ? 'bg-[#C89654]/25 text-[#C89654] font-semibold' : ''; ?>"><i class="fa-regular fa-eye mr-2"></i> Manage</a></li>
-                    <li><a class="block cursor-default rounded-md p-2 text-sm text-gray-200 <?php echo (strpos($current_path, '/events/schedules/manage') === 0) ? 'bg-[#C89654]/25 text-[#C89654] font-semibold' : ''; ?>"><i class="fa-solid fa-clock mr-2"></i> Schedules</a></li>
-                    <li><a class="block cursor-default rounded-md p-2 text-sm text-gray-200 <?php echo (strpos($current_path, '/events/nametags') === 0) ? 'bg-[#C89654]/25 text-[#C89654] font-semibold' : ''; ?>"><i class="fa-solid fa-id-badge mr-2"></i> Nametags</a></li>
-                    <li><a class="block cursor-default rounded-md p-2 text-sm text-gray-200 <?php echo (strpos($current_path, '/events/checkin') === 0) ? 'bg-[#C89654]/25 text-[#C89654] font-semibold' : ''; ?>"><i class="fa-solid fa-clipboard-check mr-2"></i> Desk Check-ins</a></li>
-                    <li><a class="block cursor-default rounded-md p-2 text-sm text-gray-200 <?php echo (strpos($current_path, '/events/purchases') === 0) ? 'bg-[#C89654]/25 text-[#C89654] font-semibold' : ''; ?>"><i class="fa-solid fa-ticket mr-2"></i> Tickets</a></li>
+                    <li><a class="block cursor-default rounded-md p-2 text-sm text-black-500 hover:text-black-700 <?php echo (strpos($current_path, '/events/manage') === 0) ? 'bg-[#C89654]/25 text-[#C89654] font-semibold' : ''; ?>"><i class="fa-regular fa-eye mr-2"></i> Manage</a></li>
+                    <li><a class="block cursor-default rounded-md p-2 text-sm text-black-500 hover:text-black-700 <?php echo (strpos($current_path, '/events/schedules/manage') === 0) ? 'bg-[#C89654]/25 text-[#C89654] font-semibold' : ''; ?>"><i class="fa-solid fa-clock mr-2"></i> Schedules</a></li>
+                    <li><a class="block cursor-default rounded-md p-2 text-sm text-black-500 hover:text-black-700 <?php echo (strpos($current_path, '/events/nametags') === 0) ? 'bg-[#C89654]/25 text-[#C89654] font-semibold' : ''; ?>"><i class="fa-solid fa-id-badge mr-2"></i> Nametags</a></li>
+                    <li><a class="block cursor-default rounded-md p-2 text-sm text-black-500 hover:text-black-700 <?php echo (strpos($current_path, '/events/checkin') === 0) ? 'bg-[#C89654]/25 text-[#C89654] font-semibold' : ''; ?>"><i class="fa-solid fa-clipboard-check mr-2"></i> Desk Check-ins</a></li>
+                    <li><a class="block cursor-default rounded-md p-2 text-sm text-black-500 hover:text-black-700 <?php echo (strpos($current_path, '/events/purchases') === 0) ? 'bg-[#C89654]/25 text-[#C89654] font-semibold' : ''; ?>"><i class="fa-solid fa-ticket mr-2"></i> Tickets</a></li>
                   </ul>
                 <?php endif; ?>
               </li>
